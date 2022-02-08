@@ -3,10 +3,10 @@ import React, { useState, createContext } from 'react'
 export const GlobalContext = createContext()
 
 export const GlobalProvider = props => {
-  const [globalState, setGlobalState] = useState('en')
+  const [totalPrice, setTotalPrice] = useState({})
 
   return <GlobalContext.Provider value={{
-    globalState, setGlobalState,
+    totalPrice, setTotalPrice
   }}>
     {props.children}
   </GlobalContext.Provider>

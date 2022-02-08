@@ -1,15 +1,16 @@
 import './styles/global.css';
-import { Header } from './components/Header'
+import { ProductListing } from './components/ProductListing'
+import { CheckoutSection } from './components/CheckoutSection'
 import { GlobalProvider } from './context/GlobalContext'
 
 function App() {
+  // if there arent any products, show a (message?)
+
   return (
     <GlobalProvider>
       <div className="App">
-        <Header />
-        <div className="container">
-          body
-        </div>
+        <ProductListing />
+        <CheckoutSection />
       </div>
     </GlobalProvider>
   );

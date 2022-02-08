@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button {
+  padding: 15px 20px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #675AF5;
+  border-radius: 5px;
+  color: #fff;
+}
+
+button.btn-sm {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+button.btn-sm + button.btn-sm {
+  margin-left: 10px;
+}
+
+div, p {
+  font-size: 24px;
+}

@@ -1,0 +1,3 @@
+.Container {
+ @apply flex justify-center items-end flex-col;
+}
